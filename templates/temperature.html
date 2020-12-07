@@ -6,8 +6,8 @@
 </head>
 <body>
 <canvas id="panel" height="330px" width="700px"> </canvas>  <!--折线图位置-->
-<form action="temperature" method="get">
-    <P><button type="submit">跳转温度</button></P>
+<form action="/" method="get">
+    <P><button type="submit">跳转高度</button></P>
 </form>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> <!--导入jQuery-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> <!--导入jQuery-->
@@ -34,7 +34,7 @@
         var int = setInterval(function () {  //设置定时器
            $.ajax(
                {
-                   url:"/setData/", //从setData函数中获取数据
+                   url:"/setData1/", //从setData函数中获取数据
                    type:"get",
                    data:"",
                    success:function (data) {
