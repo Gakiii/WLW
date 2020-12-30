@@ -20,27 +20,6 @@ from flask import jsonify  # 数据转为json，并以字典的形式传回前�
 import datetime, random  # 导入时间和随机数模块
 
 
-# @app.route('/setData/')  # 路由
-# def setData():
-#     while True:
-#         print("hello world")
-#         now = datetime.datetime.now().strftime('%H:%M:%S')
-#         array = detector.detector()
-#         height = 0
-#         temperature = 0
-#         a = array[0]
-#         b = array[1]
-#         if a[-2:-1] == 'm':
-#             height = float(a[:-2])
-#             temperature=float(b[:-2])
-#         else:
-#             height = float(b[:-2])
-#
-#             temperature = float(a[:-2])
-#
-#         data = {'time':now, 'h':height,'t':temperature}
-#         #data = {'time': now, 'data': random.randint(1, 10)}
-#         return jsonify(data)  # 将数据以字典的形式传回
 
 @app.route('/setData/')
 def setData():
